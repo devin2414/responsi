@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+  <!-- Impor Typed.js -->
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="container">
+      <h1 class="logo">My Portfolio</h1>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#myskills">My Skills</a></li>
+        <li><a href="#my projects">My Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <!-- Download Button -->
+      <a href="C:\DEPINZ\RESPONSI1\CV.pdf" class="btn download-btn" download>Download CV</a>
+    </div>
+  </nav>
+
+<!-- Hero Section -->
+<section id="home" class="hero">
+  <div class="container hero-content">
+    <div class="profile-pic">
+      <img src="C:\DEPINZ\RESPONSI1\WhatsApp Image 2024-11-23 at 02.52.35_eee295ee.jpg" alt="Profile Picture">
+    </div>
+    <div class="intro">
+      <h2>Hello, I'm <span id="typed-name"></span></h2> <!-- Tempat efek mengetik pada nama -->
+      <p>Aspiring designer passionate about creating impactful projects.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Skrip untuk Typed.js -->
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    var typed = new Typed('#typed-name', {
+      strings: ['Devina', 'a Graphic Design!', 'an Illustrator!', 'a Prototyping!', 'a Jeno"s!'],
+      typeSpeed: 100,
+      backSpeed: 50,
+      loop: true
+    });
+  });
+</script>
+
+  <!-- About Me Section -->
+  <section id="about" class="about hidden">
+    <div class="container">
+      <h2>About Me</h2>
+      <div class="about-content">
+        <p>
+          Hi, I'm Devina, a passionate designer with a love for creating impactful and meaningful projects. 
+          I specialize in crafting user-friendly designs that resonate with people. 
+          With a strong background in design principles and a keen eye for detail, I strive to bring ideas to life in innovative ways.
+        </p>
+        <p>
+          When I'm not designing, I enjoy exploring new trends in technology, sketching, and collaborating with like-minded creatives.
+          Let's work together to make something extraordinary!
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- My Skills Section -->
+  <section id="myskills" class="myskills hidden">
+    <div class="container">
+      <h2>My Skills</h2>
+      <div class="skills-content">
+        <div class="skills-grid">
+          <div class="skill-item">
+            <i class="fas fa-paint-brush"></i>
+            <p>UI/UX Design</p>
+          </div>
+          <div class="skill-item">
+            <i class="fas fa-pencil-alt"></i>
+            <p>Graphic Design</p>
+          </div>
+          <div class="skill-item">
+            <i class="fas fa-code"></i>
+            <p>Web Development</p>
+          </div>
+          <div class="skill-item">
+            <i class="fab fa-adobe"></i>
+            <p>Adobe Photoshop & Illustrator</p>
+          </div>
+          <div class="skill-item">
+            <i class="fas fa-project-diagram"></i>
+            <p>Prototyping & Wireframing</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+  <!-- Portfolio Section -->
+  <section id="portfolio" class="portfolio hidden">
+    <div class="container">
+      <h2>My Projects</h2>
+      <div class="portfolio-grid">
+        <div class="portfolio-item">
+          <img src="C:\DEPINZ\RESPONSI1\Screenshot (392).png" alt="Project 1">
+          <h3>Project 1</h3>
+        </div>
+        <div class="portfolio-item">
+          <img src="C:\DEPINZ\RESPONSI1\Screenshot (409).png" alt="Project 2">
+          <h3>Project 2</h3>
+        </div>
+        <div class="portfolio-item">
+          <img src="C:\DEPINZ\RESPONSI1\Screenshot (444).png" alt="Project 3">
+          <h3>Project 3</h3>
+        </div>
+        <div class="portfolio-item">
+          <img src="C:\DEPINZ\RESPONSI1\Screenshot (465).png" alt="Project 4">
+          <h3>Project 4</h3>
+        </div>
+        <div class="portfolio-item">
+          <img src="C:\DEPINZ\RESPONSI1\MacBook Air - 24.png" alt="Project 5">
+          <h3>Project 5</h3>
+        </div>
+        <div class="portfolio-item">
+          <img src="C:\DEPINZ\RESPONSI1\MacBook Air - 20.png" alt="Project 6">
+          <h3>Project 6</h3>
+        </div>
+        <div class="portfolio-item">
+          <img src="C:\DEPINZ\RESPONSI1\MacBook Air - 23.png" alt="Project 7">
+          <h3>Project 7</h3>
+        </div>
+        <div class="portfolio-item">
+          <img src="C:\DEPINZ\RESPONSI1\MacBook Air - 26.png" alt="Project 8">
+          <h3>Project 8</h3>
+        </div>
+      </div>
+    </div>
+  </section>  
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <h2>Contact</h2>
+      <p>If you'd like to get in touch, feel free to reach out to me.</p>
+      <form action="#">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required></textarea>
+        
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Social Media Section -->
+  <section class="social-media">
+    <div class="container">
+      <h2>Follow Me</h2>
+      <div class="social-icons">
+        <a href="https://www.instagram.com/" target="_blank" class="social-icon">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://www.twitter.com/" target="_blank" class="social-icon">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="https://www.facebook.com/" target="_blank" class="social-icon">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+      </div>
+    </div>
+  </section>  
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2024 Devina. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    // JavaScript for download button animation
+    const downloadButton = document.querySelector('.download-btn');
+
+    downloadButton.addEventListener("mousedown", () => {
+      downloadButton.style.transform = "scale(0.95)";
+    });
+    
+    downloadButton.addEventListener("mouseup", () => {
+      downloadButton.style.transform = "scale(1)";
+    });
+
+    // Intersection Observer for fading in sections
+    document.addEventListener("DOMContentLoaded", () => {
+      const hiddenElements = document.querySelectorAll('.hidden');
+
+      const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible'); // Add 'visible' class
+            observer.unobserve(entry.target); // Stop observing the element
+          }
+        });
+      }, { threshold: 0.1 }); // Element must be at least 10% visible
+
+      hiddenElements.forEach(el => observer.observe(el));
+    });
+  </script>
+
+</body>
+</html>
